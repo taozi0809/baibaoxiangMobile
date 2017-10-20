@@ -1,0 +1,749 @@
+@charset "UTF-8";
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html, body {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  font-family: STXihei, "Microsoft YaHei";
+  font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
+  font-size: 3vw;
+  color: #000;
+  overflow: hidden; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /*css public*/
+  .title {
+    margin-top: 6vw;
+    width: 100%;
+    height: auto; }
+    .title .triangle_border_down {
+      width: 0;
+      height: 0;
+      border-width: 3vw 3vw 0;
+      border-style: solid;
+      border-color: #7d56c9 transparent transparent;
+      /*灰 透明 透明 */
+      margin: 0 auto;
+      position: relative; }
+    .title h2 {
+      text-align: center;
+      margin-top: 1vw; }
+      .title h2 span {
+        color: #7d86c9; }
+
+  /*page1*/
+  .page1 {
+    background: url("../img/page1-bj.jpg") no-repeat;
+    background-size: cover; }
+    .page1 .page1-cont {
+      width: 100%;
+      height: auto; }
+      .page1 .page1-cont img {
+        display: block;
+        margin: 6vw auto;
+        width: 77%; }
+
+  /*page2*/
+  .page2-box {
+    width: 100%; }
+    .page2-box .page2-item {
+      width: 86%;
+      margin: 0 auto; }
+      .page2-box .page2-item li {
+        float: left;
+        width: 40vw;
+        height: 66vw; }
+        .page2-box .page2-item li img {
+          width: 38vw;
+          height: 33vw; }
+        .page2-box .page2-item li .item-title {
+          width: 100%;
+          text-align: center;
+          font-weight: 700;
+          margin: 2vw 0;
+          font-size: 3vw; }
+        .page2-box .page2-item li .item-txt {
+          color: #aaa;
+          line-height: 4vw; }
+      .page2-box .page2-item li:nth-child(1) {
+        margin-top: 6vw; }
+      .page2-box .page2-item li:nth-child(2) {
+        float: right;
+        margin-top: 6vw; }
+      .page2-box .page2-item li:nth-child(3) {
+        margin-top: 2vw; }
+      .page2-box .page2-item li:nth-child(4) {
+        float: right;
+        margin-top: 2vw; }
+
+  /*page3*/
+  .page3 {
+    background: url("../img/page3-bj.png") no-repeat;
+    background-size: cover; }
+    .page3 .page3-cont {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20vw; }
+      .page3 .page3-cont img {
+        width: 100%; }
+
+  /*page4*/
+  .page4 {
+    background: #e7f6fd; }
+    .page4 .page4-cont {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 7vw; }
+      .page4 .page4-cont img {
+        width: 100%; }
+    .page4 .item {
+      width: 66%;
+      margin: 0 auto; }
+      .page4 .item .item-txt {
+        margin-top: 2vw;
+        color: #818181;
+        font-size: 4.5vw; }
+
+  /*page5*/
+  .page5 {
+    background: #fef9e6; }
+    .page5 .page5-cont {
+      width: 90%;
+      margin: 10vw auto;
+      padding-left: 6vw; }
+      .page5 .page5-cont img {
+        width: 100%; }
+
+  /*page6*/
+  .page6 {
+    background: #e7f6fd; }
+    .page6 .swiper-container {
+      width: 86%;
+      height: 80%;
+      margin: 5vw auto; }
+      .page6 .swiper-container .swiper-wrapper {
+        width: 100%;
+        height: auto; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li {
+          width: 40vw;
+          height: auto;
+          float: left;
+          margin-top: 5vw; }
+          .page6 .swiper-container .swiper-wrapper .swiper-slide li img {
+            width: 100%;
+            height: 100%; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li:nth-child(2) {
+          float: right; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li:nth-child(4) {
+          float: right; }
+
+  .swiper-pagination-bullets {
+    position: relative;
+    top: 5vw;
+    display: block;
+    z-index: 10000;
+    bottom: 0vw !important; }
+
+  /*page7*/
+  .page7 {
+    background: #fef9e6; }
+    .page7 .container {
+      max-width: 800px;
+      margin: -5vw auto; }
+      .page7 .container .slide {
+        width: 100%;
+        min-height: 110vw;
+        overflow: hidden;
+        position: relative; }
+        .page7 .container .slide .img {
+          overflow: hidden;
+          position: absolute;
+          transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s; }
+          .page7 .container .slide .img img {
+            width: calc(100% - 14px);
+            height: calc(100% - 14px);
+            margin: 7px; }
+        .page7 .container .slide .img1 {
+          width: 40%;
+          height: 40%;
+          top: 30%;
+          left: -50%;
+          z-index: 1; }
+        .page7 .container .slide .img2 {
+          width: 60%;
+          height: 60%;
+          top: 20%;
+          left: -20%;
+          z-index: 2; }
+        .page7 .container .slide .img3 {
+          width: 80%;
+          height: 80%;
+          top: 10%;
+          left: 10%;
+          z-index: 3; }
+        .page7 .container .slide .img4 {
+          width: 60%;
+          height: 60%;
+          top: 20%;
+          left: 60%;
+          z-index: 2; }
+        .page7 .container .slide .img5 {
+          width: 40%;
+          height: 40%;
+          top: 30%;
+          left: 110%;
+          z-index: 1; }
+        .page7 .container .slide .img1::after, .page7 .container .slide .img1::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img2::after, .page7 .container .slide .img2::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img4::after, .page7 .container .slide .img4::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img5::after, .page7 .container .slide .img5::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+      .page7 .container .slide-bt {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 50%; }
+        .page7 .container .slide-bt span {
+          /*width: 24px;
+          height: 8px;
+          background: #c9caca;
+          float: left;
+          margin: 5px;
+          border-radius: 4px;*/
+          width: 2vw;
+          height: 2vw;
+          display: inline-block;
+          border-radius: 100%;
+          background: #000;
+          opacity: .2;
+          margin-left: 2vw; }
+          .page7 .container .slide-bt span .on {
+            /*background: #ffd200;*/
+            opacity: 1;
+            background: #7d86c9; }
+      .page7 .container .slide-dot {
+        display: inline-block;
+        margin: 0vw auto;
+        text-align: center;
+        padding-left: 30%; }
+        .page7 .container .slide-dot .slide-radius {
+          float: left;
+          width: 2.5vw;
+          height: 2.5vw;
+          display: inline-block;
+          border-radius: 100%;
+          background: #000;
+          opacity: .2;
+          margin-left: 2vw; }
+        .page7 .container .slide-dot .on {
+          opacity: 1;
+          background: #7d86c9; }
+        .page7 .container .slide-dot .item-list {
+          float: left;
+          width: 6vw;
+          height: 3vw;
+          border-radius: 10px;
+          background: rgba(100, 100, 100, 0.3);
+          margin-top: -0.25vw;
+          margin-left: 2vw;
+          position: relative; }
+          .page7 .container .slide-dot .item-list .item-con {
+            display: block;
+            width: 1.5vw;
+            height: 1.5vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 100%;
+            border: 0;
+            margin: 0;
+            padding: 0; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(1) {
+            float: left;
+            margin-top: 0.75vw;
+            margin-left: 0.5vw; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(2) {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0.75vw;
+            bottom: 0; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(3) {
+            float: right;
+            margin-top: 0.75vw;
+            margin-right: 0.5vw; }
+
+  /*page8*/
+  .page8 {
+    background: url("../img/page8-bj.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+    .page8 .aboutUs {
+      width: 80%;
+      height: 80%;
+      margin: 4vw auto;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 15px #c1c1c1;
+      overflow: hidden;
+      position: relative; }
+      .page8 .aboutUs .page8-scroll {
+        position: absolute;
+        wdith: 100%;
+        height: 100%;
+        margin: 3vw;
+        top: 0vw; }
+        .page8 .aboutUs .page8-scroll .txt {
+          width: 90%;
+          height: 90%;
+          margin: 5% auto;
+          color: #333;
+          font-size: 4vw; }
+          .page8 .aboutUs .page8-scroll .txt p {
+            line-height: 6.5vw; }
+    .page8 .arrow-down {
+      position: absolute;
+      bottom: 6vw;
+      left: 44vw; }
+      .page8 .arrow-down img {
+        width: 12vw;
+        color: #333; }
+
+  /*page9*/
+  .page9 {
+    background: #fdf9e6; }
+    .page9 .item {
+      width: 80%;
+      margin: 0 auto; }
+      .page9 .item li {
+        width: 90%;
+        height: 50vw;
+        text-align: center;
+        margin: 0 5%;
+        margin-top: 5vw; }
+        .page9 .item li img {
+          wdith: 90%;
+          height: 90%; }
+        .page9 .item li a img {
+          position: relative;
+          top: -80%;
+          width: 15vw;
+          height: 15vw; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*css public*/
+  .title {
+    margin-top: 6vw;
+    width: 100%;
+    height: auto; }
+    .title .triangle_border_down {
+      width: 0;
+      height: 0;
+      border-width: 3vw 3vw 0;
+      border-style: solid;
+      border-color: #7d56c9 transparent transparent;
+      /*灰 透明 透明 */
+      margin: 0 auto;
+      position: relative; }
+    .title h2 {
+      text-align: center;
+      margin-top: 1vw;
+      font-size: 3vw; }
+      .title h2 span {
+        color: #7d86c9; }
+
+  /*page1*/
+  .page1 {
+    background: url("../img/ipad/page1-bj.jpg") no-repeat;
+    background-size: cover; }
+    .page1 .page1-cont {
+      width: 100%;
+      height: auto; }
+      .page1 .page1-cont img {
+        display: block;
+        margin: 6vw auto;
+        width: 60%; }
+
+  /*page2*/
+  .page2-box {
+    width: 100%; }
+    .page2-box .page2-item {
+      width: 70%;
+      margin: 0 auto; }
+      .page2-box .page2-item li {
+        float: left;
+        width: 30vw;
+        height: 40vw; }
+        .page2-box .page2-item li img {
+          width: 30vw;
+          height: 25vw; }
+        .page2-box .page2-item li .item-title {
+          width: 100%;
+          text-align: center;
+          font-weight: 700;
+          margin: 1vw 0;
+          font-size: 2vw; }
+        .page2-box .page2-item li .item-txt {
+          color: #aaa;
+          line-height: 2.5vw;
+          font-size: 2vw; }
+      .page2-box .page2-item li:nth-child(1) {
+        margin-top: 6vw; }
+      .page2-box .page2-item li:nth-child(2) {
+        float: right;
+        margin-top: 6vw; }
+      .page2-box .page2-item li:nth-child(3) {
+        margin-top: 3vw; }
+      .page2-box .page2-item li:nth-child(4) {
+        float: right;
+        margin-top: 3vw; }
+
+  /*page3*/
+  .page3 {
+    background: url("../img/ipad/page3-bj.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 100%; }
+    .page3 .page3-cont {
+      margin: 10vw auto;
+      text-align: center; }
+      .page3 .page3-cont img {
+        width: 80%; }
+
+  /*page4*/
+  .page4 {
+    background: #e7f6fd; }
+    .page4 .page4-cont {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 7vw;
+      text-align: center; }
+      .page4 .page4-cont img {
+        width: 85%; }
+    .page4 .item {
+      width: 55%;
+      margin: 0 auto; }
+      .page4 .item .item-txt {
+        margin-top: 2vw;
+        color: #818181;
+        font-size: 2.5vw; }
+
+  /*page5*/
+  .page5 {
+    background: #fef9e6; }
+    .page5 .page5-cont {
+      width: 80%;
+      margin: 5vw auto;
+      padding-left: 6vw;
+      text-align: center; }
+      .page5 .page5-cont img {
+        width: 85%; }
+
+  /*page6*/
+  .page6 {
+    background: #e7f6fd; }
+    .page6 .swiper-container {
+      width: 60%;
+      height: 68%;
+      margin: 3vw auto; }
+      .page6 .swiper-container .swiper-wrapper {
+        width: 100%;
+        height: auto; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li {
+          width: 25vw;
+          height: auto;
+          float: left;
+          margin-top: 5vw; }
+          .page6 .swiper-container .swiper-wrapper .swiper-slide li img {
+            width: 100%;
+            height: 100%; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li:nth-child(2) {
+          float: right; }
+        .page6 .swiper-container .swiper-wrapper .swiper-slide li:nth-child(4) {
+          float: right; }
+
+  .swiper-pagination-bullets {
+    position: relative;
+    top: 5vw;
+    display: block;
+    z-index: 10000;
+    bottom: 0vw !important; }
+
+  /*page7*/
+  .page7 {
+    background: #fef9e6; }
+    .page7 .container {
+      max-width: 100%;
+      margin: -5vw auto; }
+      .page7 .container .slide {
+        width: 80%;
+        min-height: 80vw;
+        margin: 0 10%;
+        overflow: hidden;
+        position: relative; }
+        .page7 .container .slide .img {
+          overflow: hidden;
+          position: absolute;
+          transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s; }
+          .page7 .container .slide .img img {
+            width: calc(100% - 14px);
+            height: calc(100% - 14px);
+            margin: 7px; }
+        .page7 .container .slide .img1 {
+          width: 40%;
+          height: 40%;
+          top: 30%;
+          left: -50%;
+          z-index: 1; }
+        .page7 .container .slide .img2 {
+          width: 60%;
+          height: 60%;
+          top: 20%;
+          left: -20%;
+          z-index: 2; }
+        .page7 .container .slide .img3 {
+          width: 80%;
+          height: 80%;
+          top: 10%;
+          left: 10%;
+          z-index: 3; }
+        .page7 .container .slide .img4 {
+          width: 60%;
+          height: 60%;
+          top: 20%;
+          left: 60%;
+          z-index: 2; }
+        .page7 .container .slide .img5 {
+          width: 40%;
+          height: 40%;
+          top: 30%;
+          left: 110%;
+          z-index: 1; }
+        .page7 .container .slide .img1::after, .page7 .container .slide .img1::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img2::after, .page7 .container .slide .img2::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img4::after, .page7 .container .slide .img4::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+        .page7 .container .slide .img5::after, .page7 .container .slide .img5::after {
+          position: absolute;
+          /*日常绝对定位*/
+          top: 0;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 100; }
+      .page7 .container .slide-bt {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 50%; }
+        .page7 .container .slide-bt span {
+          width: 1.5vw;
+          height: 1.5vw;
+          display: inline-block;
+          border-radius: 100%;
+          background: #000;
+          opacity: .2;
+          margin-left: 2vw; }
+          .page7 .container .slide-bt span .on {
+            /*background: #ffd200;*/
+            opacity: 1;
+            background: #7d86c9; }
+      .page7 .container .slide-dot {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 40%; }
+        .page7 .container .slide-dot .slide-radius {
+          float: left;
+          width: 1.5vw;
+          height: 1.5vw;
+          display: inline-block;
+          border-radius: 100%;
+          background: #000;
+          opacity: .2;
+          margin-left: 2vw; }
+        .page7 .container .slide-dot .on {
+          opacity: 1;
+          background: #7d86c9; }
+        .page7 .container .slide-dot .item-list {
+          float: left;
+          width: 6vw;
+          height: 2vw;
+          border-radius: 10px;
+          background: rgba(100, 100, 100, 0.2);
+          margin-top: -0.25vw;
+          margin-left: 2vw;
+          position: relative; }
+          .page7 .container .slide-dot .item-list .item-con {
+            display: block;
+            width: 1vw;
+            height: 1vw;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 100%;
+            border: 0;
+            margin: 0;
+            padding: 0; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(1) {
+            float: left;
+            margin-top: 0.5vw; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(2) {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0.5vw;
+            bottom: 0; }
+          .page7 .container .slide-dot .item-list .item-con:nth-child(3) {
+            float: right;
+            margin-top: 0.5vw; }
+
+  /*page8*/
+  .page8 {
+    background: url("../img/page8-bj.png") no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .page8 .aboutUs {
+      width: 75%;
+      height: 80%;
+      margin: 4vw auto;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 15px #c1c1c1;
+      overflow: hidden;
+      position: relative; }
+      .page8 .aboutUs .page8-scroll {
+        position: absolute;
+        wdith: 100%;
+        height: 100%;
+        margin: 3vw;
+        margin-top: 0;
+        top: 0vw; }
+        .page8 .aboutUs .page8-scroll .txt {
+          width: 90%;
+          height: 90%;
+          margin: 5% auto;
+          color: #333;
+          font-size: 2.5vw; }
+          .page8 .aboutUs .page8-scroll .txt p {
+            line-height: 6vw; }
+    .page8 .arrow-down {
+      position: absolute;
+      bottom: 4vw;
+      left: 44vw; }
+      .page8 .arrow-down img {
+        width: 12vw;
+        color: #333; }
+
+  /*page9*/
+  .page9 {
+    background: #fdf9e6; }
+    .page9 .item {
+      width: 90%;
+      margin: 0 auto; }
+      .page9 .item li {
+        width: 100%;
+        height: 40vw;
+        margin-top: 5vw;
+        text-align: center; }
+        .page9 .item li img {
+          wdith: 100%;
+          height: 100%; }
+        .page9 .item li .a1 {
+          display: inline-block;
+          position: absolute;
+          top: 25vw;
+          left: 40vw; }
+        .page9 .item li .a2 {
+          display: inline-block;
+          position: absolute;
+          top: 70vw;
+          left: 40vw; } }
+.swiper-pagination1 {
+  position: absolute;
+  top: 60% !important;
+  right: 4vw; }
+
+/*# sourceMappingURL=baibaoxiangMobile.css.map */
